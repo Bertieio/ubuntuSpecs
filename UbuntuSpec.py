@@ -3,6 +3,21 @@
 import socket, getpass, platform, psutil, time, calendar
 from colored import fg, bg, attr
 
+
+#Colors! Use the ANCI codes found here https://github.com/dslackw/colored
+
+#ubuntu
+DarkColor = 201
+MedColor = 135
+LightColor = 15
+
+FontColor = 201
+AtColor = 15
+#
+
+#You shouldn't need to touch anything bellow here!
+
+
 Disk = psutil.disk_usage('/')
 
 DiskTotal = round(Disk[0] / 1000000000,2)
@@ -46,16 +61,6 @@ Sys = platform.system()
 Bit = platform.processor()
 OS = platform.linux_distribution()
 
-#Colors! Use the ANCI codes found here https://github.com/dslackw/colored
-
-#ubuntu
-DarkColor = 201
-MedColor = 135
-LightColor = 15
-
-FontColor = 201
-AtColor = 15
-#
 print("{}                          ./+o+-".format(fg(DarkColor)))
 print("{}                  yyyyy-{} -yyyyyy+".format(fg(MedColor), fg(DarkColor)))
 print("{}               ://+//////{}-yyyyyyo       {}{}{}@{}{}".format(fg(MedColor), fg(DarkColor), fg(FontColor), UserName, fg(AtColor), fg(FontColor), HostName))
