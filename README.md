@@ -9,3 +9,11 @@ pip3 install psutil
 Default output:
 
 ![Default Output](https://raw.githubusercontent.com/Bertieio/ubuntuSpecs/master/ENwxOJf.png)
+
+TODO:
+
+Add CPU, GPU, RAM
+More Distos
+More Options
+General Bugfixes
+
