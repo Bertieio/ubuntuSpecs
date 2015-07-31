@@ -13,7 +13,10 @@ Default output:
 TODO:
 
 Add CPU, GPU, RAM
+
 More Distos
+
 More Options
+
 General Bugfixes
 
