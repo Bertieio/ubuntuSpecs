@@ -6,14 +6,15 @@ from colored import fg, bg, attr
 
 #Colors! Use the ANCI codes found here https://github.com/dslackw/colored
 
+FontColor = 201
+AtColor = 15
+TitleColor = 15
+
 #ubuntu
 DarkColor = 201
 MedColor = 135
 LightColor = 15
 
-FontColor = 201
-AtColor = 15
-#
 
 #You shouldn't need to touch anything bellow here!
 
@@ -64,10 +65,10 @@ OS = platform.linux_distribution()
 print("{}                          ./+o+-".format(fg(DarkColor)))
 print("{}                  yyyyy-{} -yyyyyy+".format(fg(MedColor), fg(DarkColor)))
 print("{}               ://+//////{}-yyyyyyo       {}{}{}@{}{}".format(fg(MedColor), fg(DarkColor), fg(FontColor), UserName, fg(AtColor), fg(FontColor), HostName))
-print("{}           .++{} .:/++++++/-.{}+sss/`       {}OS: {} {} {}".format(fg(LightColor), fg(MedColor), fg(DarkColor),fg(FontColor), OS[0], OS[1], OS[2]))
-print("{}         .:++o:{}  /++++++++/:--:/-       {}Kernel: {} {} {}".format(fg(LightColor), fg(MedColor),fg(FontColor), Bit, Sys, Ver))
-print("{}        o:+o+:++.{}`..```.-/oo+++++/      {}Disk: {}\{} GB - {}%".format(fg(LightColor), fg(MedColor), fg(FontColor), DiskFree, DiskTotal, DiskPercent ))
-print("{}       .:+o:+o/.          {}`+sssoo+/     {}Uptime: {}".format(fg(LightColor), fg(MedColor), fg(FontColor), FormedTime))
+print("{}           .++{} .:/++++++/-.{}+sss/`       {}OS:{} {} {} {}".format(fg(LightColor), fg(MedColor), fg(DarkColor),fg(TitleColor),fg(FontColor), OS[0], OS[1], OS[2]))
+print("{}         .:++o:{}  /++++++++/:--:/-       {}Kernel:{} {} {} {}".format(fg(LightColor), fg(MedColor),fg(TitleColor),fg(FontColor), Bit, Sys, Ver))
+print("{}        o:+o+:++.{}`..```.-/oo+++++/      {}Disk:{} {}\{} GB - {}%".format(fg(LightColor), fg(MedColor),fg(TitleColor), fg(FontColor), DiskFree, DiskTotal, DiskPercent ))
+print("{}       .:+o:+o/.          {}`+sssoo+/     {}Uptime:{} {}".format(fg(LightColor), fg(MedColor), fg(TitleColor), fg(FontColor), FormedTime))
 print("{}  .++/+:{}+oo+o:`            {} /sssooo.".format(fg(MedColor), fg(LightColor), fg(MedColor)))
 print("{} /+++//+:{}`oo+o              {} /::--:.".format(fg(MedColor), fg(LightColor), fg(MedColor)))
 print("{} \+/+o+++{}`o++o              {} ++////.".format(fg(MedColor), fg(LightColor), fg(DarkColor)))
