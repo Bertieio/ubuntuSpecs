@@ -12,9 +12,9 @@ Default output:
 
 TODO:
 
-Add CPU, GPU, RAM
+Add CPU, GPU, RAM, Package Count\upgrades
 
-More Distos
+More Disto Logos
 
 More Options
 
