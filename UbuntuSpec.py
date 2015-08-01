@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
-import socket, getpass, platform, psutil, time, calendar
+import socket, getpass, platform, psutil, time, calendar 
+from cpuinfo import cpuinfo
 from colored import fg, bg, attr
 
 
@@ -17,6 +18,8 @@ LightColor = 15
 
 
 #You shouldn't need to touch anything bellow here!
+
+cpu = cpuinfo.get_cpu_info()
 
 
 Disk = psutil.disk_usage('/')
@@ -69,7 +72,7 @@ print("{}           .++{} .:/++++++/-.{}+sss/`       {}OS:{} {} {} {}".format(fg
 print("{}         .:++o:{}  /++++++++/:--:/-       {}Kernel:{} {} {} {}".format(fg(LightColor), fg(MedColor),fg(TitleColor),fg(FontColor), Bit, Sys, Ver))
 print("{}        o:+o+:++.{}`..```.-/oo+++++/      {}Disk:{} {}\{} GB - {}%".format(fg(LightColor), fg(MedColor),fg(TitleColor), fg(FontColor), DiskFree, DiskTotal, DiskPercent ))
 print("{}       .:+o:+o/.          {}`+sssoo+/     {}Uptime:{} {}".format(fg(LightColor), fg(MedColor), fg(TitleColor), fg(FontColor), FormedTime))
-print("{}  .++/+:{}+oo+o:`            {} /sssooo.".format(fg(MedColor), fg(LightColor), fg(MedColor)))
+print("{}  .++/+:{}+oo+o:`            {} /sssooo.    {}CPU: {}{}".format(fg(MedColor), fg(LightColor), fg(MedColor), fg(TitleColor), fg(FontColor), cpu['brand']))
 print("{} /+++//+:{}`oo+o              {} /::--:.".format(fg(MedColor), fg(LightColor), fg(MedColor)))
 print("{} \+/+o+++{}`o++o              {} ++////.".format(fg(MedColor), fg(LightColor), fg(DarkColor)))
 print("{}  .++.o+{}++oo+:`            {} /dddhhh.".format(fg(MedColor), fg(LightColor), fg(DarkColor)))
