@@ -32,7 +32,7 @@ DiskPercent = Disk[3]
 
 
 RamTotal = round(RAM[0] / 1000000000,2)
-RamTaken = round(RAM[3] / 1000000000,2)
+RamTaken = round(RAM[5] / 1000000000,2)
 RamFree = round(RAM[1] / 1000000000,2)
 RamPercent = RAM[2] 
 
@@ -82,7 +82,7 @@ print("{}         .:++o:{}  /++++++++/:--:/-       {}Kernel:{} {} {} {}".format(
 print("{}        o:+o+:++.{}`..```.-/oo+++++/      {}Disk:{} {}\{} GB - {}%".format(fg(LightColor), fg(MedColor),fg(TitleColor), fg(FontColor), DiskFree, DiskTotal, DiskPercent ))
 print("{}       .:+o:+o/.          {}`+sssoo+/     {}Uptime:{} {}".format(fg(LightColor), fg(MedColor), fg(TitleColor), fg(FontColor), FormedTime))
 print("{}  .++/+:{}+oo+o:`            {} /sssooo.    {}CPU: {}{}".format(fg(MedColor), fg(LightColor), fg(MedColor), fg(TitleColor), fg(FontColor), cpu['brand']))
-print("{} /+++//+:{}`oo+o              {} /::--:.    {}RAM: {}{}\{} GB - {}%".format(fg(MedColor), fg(LightColor), fg(MedColor), fg(TitleColor), fg(FontColor), RamTotal, RamFree, RamPercent))
+print("{} /+++//+:{}`oo+o              {} /::--:.    {}RAM: {}{}\{} GB - {}%".format(fg(MedColor), fg(LightColor), fg(MedColor), fg(TitleColor), fg(FontColor), RamTaken, RamTotal, RamPercent))
 print("{} \+/+o+++{}`o++o              {} ++////.".format(fg(MedColor), fg(LightColor), fg(DarkColor)))
 print("{}  .++.o+{}++oo+:`            {} /dddhhh.".format(fg(MedColor), fg(LightColor), fg(DarkColor)))
 print("{}       .+.o+oo:.         {} `oddhhhh+".format(fg(LightColor), fg(DarkColor)))
