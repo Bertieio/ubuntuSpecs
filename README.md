@@ -2,11 +2,13 @@ Clone of Archey and screenfetch written in python3 trying to add the ablity to t
 
 Currently Only Displays Ubuntu logo
 
-Requires python3, colored and psutil
+Requires python3, colored, cpuinfo and psutil
 
 pip3 install colored
 
 pip3 install psutil
+
+pip3 install py-cpuinfo
 
 Default output:
 
@@ -14,7 +16,7 @@ Default output:
 
 TODO:
 
-Add CPU, GPU, RAM, Package Count\upgrades
+Add GPU, RAM, Package Count\upgrades
 
 More Disto Logos
 
