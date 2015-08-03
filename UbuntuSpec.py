@@ -49,7 +49,7 @@ def display_time(seconds, granularity=4444):
             seconds -= value * count
             if value == 1:
                 name = name.rstrip('s')
-            result.append("{} {}".format(round(value,0), name))
+            result.append("{} {}".format(int(round(value,0)), name))
     return ', '.join(result[:granularity])
 
 
@@ -61,6 +61,7 @@ Ver = platform.release()
 Sys = platform.system()
 Bit = platform.processor()
 OS = platform.linux_distribution()
+
 
 print("{}                          ./+o+-".format(fg(DarkColor)))
 print("{}                  yyyyy-{} -yyyyyy+".format(fg(MedColor), fg(DarkColor)))
