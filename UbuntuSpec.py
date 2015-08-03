@@ -7,14 +7,14 @@ from colored import fg, bg, attr
 
 #Colors! Use the ANCI codes found here https://github.com/dslackw/colored
 
-FontColor = 201
+FontColor = 166 
 AtColor = 15
 TitleColor = 15
 
 #ubuntu
-DarkColor = 201
-MedColor = 135
-LightColor = 15
+DarkColor = 1
+MedColor = 166
+LightColor = 11
 
 
 #You shouldn't need to touch anything bellow here!
