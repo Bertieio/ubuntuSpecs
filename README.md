@@ -16,7 +16,7 @@ Default output:
 
 TODO:
 
-Add GPU, RAM, Package Count\upgrades
+Add GPU, Package Count\upgrades
 
 More Disto Logos
 
