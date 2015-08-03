@@ -52,7 +52,7 @@ def display_time(seconds, granularity=4444):
             seconds -= value * count
             if value == 1:
                 name = name.rstrip('s')
-            result.append("{} {}".format(int(round(value,0)), name))
+            result.append("{} {}".format(int(value), name))
     return ', '.join(result[:granularity])
 
 
